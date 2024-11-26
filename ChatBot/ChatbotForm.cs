@@ -129,7 +129,7 @@ public class ChatbotForm : Form
 
     private async Task<string> GetWeatherAsync(string city)
     {
-        string apiKey = "6d8e396e7b4c9faa2febd1bc48db5666";
+        string apiKey = "Enter OpenWeather API key here";
         string url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric";
 
         using (HttpClient client = new HttpClient())
@@ -152,7 +152,7 @@ public class ChatbotForm : Form
 
     private async Task<string> GetStockPriceAsync(string symbol)
     {
-        string apiKey = "W4BHR3LXFOU5MRB5";
+        string apiKey = "Enter AlphaVantage API key here";
         string url = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&apikey={apiKey}";
 
         using (HttpClient client = new HttpClient())
